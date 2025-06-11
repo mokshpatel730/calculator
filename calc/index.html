@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enhanced Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="calculator">
-        <div class="top-bar">
-            <h2>Calculator</h2>
-            <button id="toggle-theme">🌙</button>
-        </div>
-        <div class="display">
-            <input type="text" id="display" readonly value="0">
-        </div>
-        <div class="button-grid">
-            <button class="btn btn-clear" onclick="clearAll()">AC</button>
-            <button class="btn btn-clear" onclick="clearEntry()">CE</button>
-            <button class="btn btn-operator" onclick="inputOperator('%')">%</button>
-            <button class="btn btn-operator" onclick="inputOperator('÷')">÷</button>
-            <button class="btn btn-number" onclick="inputNumber('7')">7</button>
-            <button class="btn btn-number" onclick="inputNumber('8')">8</button>
-            <button class="btn btn-number" onclick="inputNumber('9')">9</button>
-            <button class="btn btn-operator" onclick="inputOperator('×')">×</button>
-            <button class="btn btn-number" onclick="inputNumber('4')">4</button>
-            <button class="btn btn-number" onclick="inputNumber('5')">5</button>
-            <button class="btn btn-number" onclick="inputNumber('6')">6</button>
-            <button class="btn btn-operator" onclick="inputOperator('−')">−</button>
-            <button class="btn btn-number" onclick="inputNumber('1')">1</button>
-            <button class="btn btn-number" onclick="inputNumber('2')">2</button>
-            <button class="btn btn-number" onclick="inputNumber('3')">3</button>
-            <button class="btn btn-operator" onclick="inputOperator('+')">+</button>
-            <button class="btn btn-number btn-zero" onclick="inputNumber('0')">0</button>
-            <button class="btn btn-number" onclick="inputDecimal()">.</button>
-            <button class="btn btn-equals" onclick="calculate()">=</button>
-        </div>
-        <div class="history">
-            <h3>History</h3>
-            <ul id="history-list"></ul>
-        </div>
+  <div class="calculator">
+    <input type="text" class="display" disabled />
+    <div class="buttons">
+      <button class="clear">C</button>
+      <button class="backspace">←</button>
+      <button class="operator">%</button>
+      <button class="operator">/</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">*</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operator">-</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="operator">+</button>
+
+      <button>0</button>
+      <button>.</button>
+      <button class="equals">=</button>
     </div>
-    <script src="script.js"></script>
+  </div>
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
